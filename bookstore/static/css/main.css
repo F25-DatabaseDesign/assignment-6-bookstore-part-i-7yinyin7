@@ -60,7 +60,7 @@ header {
 }
 
 .dropdownContent a:hover {
-    color: #00aacc;
+    color: #556b51;
     text-decoration: none;
 }
 
@@ -330,7 +330,7 @@ h1{
 }
 
 body {
-    background-color: #f9fbf6;
+    background: linear-gradient(#f9fbf6, #eef2ec);
 }
 body {
     font-family: 'Cormorant Garamond', serif;
@@ -339,4 +339,19 @@ body {
 h1, h2, .storeTitle {
     font-family: 'Gloock', serif;
 }
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.15);
+}
+.book {
+    border: 1px solid #e3e6e0;
+    border-radius: 8px;
+    background: #f9fbf6;
+}
 
+a:hover {
+    color: #556b51;
+}
